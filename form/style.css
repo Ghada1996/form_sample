@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    padding: 7%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+.form__body,
+.form__image{
+    width: 50%;
+    padding: 70px;
+
+}
+/* form section */
+.formcontainer{
+    background-color: #FFFFFF;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    overflow: auto;
+}
+
+
+form div{
+    width: 100%;
+    border-bottom:1px solid #999;
+    padding: 10px;
+}
+form div:nth-child(5),
+form div:nth-child(6){
+    border:none;
+    font-size: 18px;
+}
+
+form div input{
+    border: none;
+    padding: 4%;
+    outline: none;
+    display: inline-block;
+
+}
+form div input[type=submit]{
+    display: inline-block;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 8px;
+}
+form div input[type="checkbox"]{
+    border: 1px solid grey;
+    border-radius: 3px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+  }
+form div label{
+    color: #222;
+    font-size: 13px;
+    padding-left: 5px;
+    font-weight: lighter;
+
+}
+form div label span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* image section */
+.form__image {
+    text-align: center;
+}
+.form__image img{
+    max-width: 100%;
+    display: block;
+}
+.form__image a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    color: #222;
+    border-bottom: 1px solid ;
+}
+/*************************************Media Query*********************************************/
+@media screen and (max-width: 1290px) {
+
+    .form__body,
+    .form__image{
+        padding: 20px;
+        width: 100%;
+    }
+    .form__body{
+        padding: 20px;
+    }
+    form div:nth-child(6){
+        text-align: center;
+        padding: 10px;
+    }
+    /* form section */
+    .formcontainer{
+        flex-direction: column;
+    }
+    
+    /* image section */
+    .form__image img{
+        margin: auto;
+    }
+   
+  }
+
+
